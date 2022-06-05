@@ -1,0 +1,69 @@
+.join-title,
+.subscribe-titel {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--wigte-cl);
+}
+
+.subscribe-block {
+  margin-left: auto;
+}
+
+.subscribe-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe-block input {
+  margin-right: 12px;
+  padding: 15px;
+  width: 358px;
+  background-color: inherit;
+  color: var(--wigte-cl);
+  outline: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border var(--anim);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-cl);
+  }
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--wigte-cl);
+  background-color: var(--accent-cl);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-cl);
+  }
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+}

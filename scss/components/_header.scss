@@ -1,0 +1,113 @@
+/* header Шапка */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* навигация */
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav__link {
+  position: relative;
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-cl);
+
+  transition: color var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.header-nav__link--active {
+  & {
+    color: var(--accent-cl);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-cl);
+  }
+}
+
+.header-nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* почта телефон */
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  margin-left: auto;
+}
+
+.contact__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

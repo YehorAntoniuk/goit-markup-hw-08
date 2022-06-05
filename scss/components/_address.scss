@@ -1,0 +1,38 @@
+.address {
+  font-style: normal;
+
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+.address .link {
+  display: block;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address .link {
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--address-link-cl);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.address .link-map {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--wigte-cl);
+}
