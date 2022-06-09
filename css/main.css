@@ -562,6 +562,10 @@ ul {
 }
 
 /* секция особенности */
+.benefits {
+  padding-bottom: 0;
+}
+
 /* секция чем занимаемся */
 .work__list {
   display: -webkit-box;
