@@ -1061,17 +1061,20 @@ ul {
   margin-left: auto;
 }
 
-.subscribe-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .subscribe-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 .subscribe-block input {
-  margin-right: 12px;
   padding: 15px;
-  width: 358px;
   background-color: inherit;
   color: var(--wigte-cl);
   outline: transparent;
@@ -1081,6 +1084,27 @@ ul {
   border-radius: 4px;
   -webkit-transition: border var(--anim);
   transition: border var(--anim);
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-block input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-block input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-block input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .subscribe-block input:hover, .subscribe-block input:focus {
@@ -1107,6 +1131,12 @@ ul {
   border-radius: 4px;
   -webkit-transition: background-color var(--anim);
   transition: background-color var(--anim);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-btn {
+    margin: 0 auto;
+  }
 }
 
 .subscribe-btn:hover, .subscribe-btn:focus {
