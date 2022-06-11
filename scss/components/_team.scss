@@ -27,7 +27,6 @@
     
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 120px)/4);
-      margin: 15px;
     }
 
     box-shadow: var(--box-shadow);
@@ -35,10 +34,6 @@
     // margin-right: 30px;
 
     background-color: var(--wigte-cl);
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 
   &__card {
