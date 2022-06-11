@@ -711,7 +711,7 @@ ul {
   color: var(--wigte-cl);
 }
 
-/* ссекция наша команда */
+/* секция наша команда */
 .team {
   background-color: var(--secondary-bg-cl);
 }
@@ -984,20 +984,34 @@ ul {
 }
 
 .main-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .address {
   font-style: normal;
 }
 
-.address:not(:last-child) {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .address:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-list {
+    margin-bottom: 60px;
+  }
 }
 
 .address .link {
@@ -1037,14 +1051,17 @@ ul {
   color: var(--wigte-cl);
 }
 
+@media screen and (max-width: 767px) {
+  .join-block {
+    margin-bottom: 60px;
+  }
+}
+
 .subscribe-block {
   margin-left: auto;
 }
 
 .subscribe-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -10,6 +10,12 @@
   color: var(--wigte-cl);
 }
 
+.join-block {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
 .subscribe-block {
   margin-left: auto;
 }
