@@ -20,6 +20,13 @@
   }
 
   &__item {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 60px)/2);
       margin: 15px;
@@ -39,6 +46,7 @@
   &__card {
     padding-top: 30px;
     padding-bottom: 24px;
+
     @media screen and (min-width: 1200px) {
       padding-bottom: 30px;
     }
