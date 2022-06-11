@@ -1,52 +1,94 @@
 /* секция особенности */
 
 .benefits {
-  // padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 
   &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     // display: flex;
     // align-items: center;
     // justify-content: center;
   }
 
   &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px)/2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px)/4);
+      // width: 270px;
+      // margin-right: 30px;
+    }
     // width: 270px;
     // margin-right: 30px;
 
     &:last-child {
-      // margin-right: 0;
+      @media screen and (min-width: 1200px) {
+        // margin-right: 0;
+      }
+    }
+    
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
   &__title {
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
 
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
-    // text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-    // color: var(--secondary-cl);
+    color: var(--secondary-cl);
   }
 
   &__text {
-    // font-size: 14px;
-    // line-height: 1.71;
+    font-size: 14px;
+    line-height: 1.71;
 
-    // letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-    // color: var(--main-txt-cl);
+    color: var(--main-txt-cl);
   }
 
   &__icon {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    // @media screen and (min-width: 1200px) {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
 
-    // background-color: var(--secondary-bg-cl);
-    // height: 120px;
-    // border-radius: 4px;
-    // margin-bottom: 30px;
+    //   background-color: var(--secondary-bg-cl);
+    //   height: 120px;
+    //   border-radius: 4px;
+    //   margin-bottom: 30px;
+    // }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-bg-cl);
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
   }
 }

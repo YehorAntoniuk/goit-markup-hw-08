@@ -1,4 +1,21 @@
 /* секция чем занимаемся */
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-cl);
+}
 
 .work__list {
   display: flex;
@@ -15,18 +32,6 @@
   &:last-child {
     margin-right: 0;
   }
-}
-
-.work__title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-cl);
 }
 
 .work__lable {
