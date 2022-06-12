@@ -1204,8 +1204,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  grid-row-gap: 8px;
-  grid-gap: 15px;
+  gap: 15px 8px;
   margin-bottom: 40px;
 }
 
