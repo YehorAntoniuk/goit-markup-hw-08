@@ -655,7 +655,11 @@ ul {
 }
 
 /* секция чем занимаемся */
-@media screen and (max-width: 1199px) {
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
   .work {
     display: none;
   }
@@ -1022,10 +1026,8 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .address-list {
-    margin-bottom: 60px;
-  }
+.address-list {
+  margin-bottom: 60px;
 }
 
 .address .link {
@@ -1065,10 +1067,8 @@ ul {
   color: var(--wigte-cl);
 }
 
-@media screen and (max-width: 767px) {
-  .join-block {
-    margin-bottom: 60px;
-  }
+.join-block {
+  margin-bottom: 60px;
 }
 
 .subscribe-block {
@@ -1088,6 +1088,9 @@ ul {
 }
 
 .subscribe-block input {
+  margin: 0 auto;
+  width: 450px;
+  margin-bottom: 20px;
   padding: 15px;
   background-color: inherit;
   color: var(--wigte-cl);
@@ -1117,6 +1120,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .subscribe-block input {
     margin-right: 12px;
+    margin-bottom: 0;
     width: 358px;
   }
 }
@@ -1133,7 +1137,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 28px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
