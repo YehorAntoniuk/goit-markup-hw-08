@@ -340,10 +340,17 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--wigte-cl);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal-wrapper {
@@ -554,6 +561,14 @@ ul {
 
 .checkbox:checked + .checked .modal-form__checked-icon {
   opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox__text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form__link {
