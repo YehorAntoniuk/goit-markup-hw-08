@@ -256,11 +256,10 @@ ul {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--hero-bg-cl);
   max-width: 1600px;
-  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-dg.png);
@@ -269,15 +268,32 @@ ul {
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+  }
+}
+
 .hero__title {
   margin: 0 auto 30px auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  max-width: 360px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
   color: var(--wigte-cl);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
