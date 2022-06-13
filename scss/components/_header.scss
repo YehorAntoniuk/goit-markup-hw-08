@@ -24,6 +24,14 @@
     display: none;
   }
 
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
