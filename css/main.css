@@ -176,6 +176,7 @@ ul {
 }
 
 .burger-menu__button {
+  z-index: 5;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -204,7 +205,6 @@ ul {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -356,10 +356,12 @@ ul {
 }
 
 .burger-menu__container {
+  display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   background-color: aqua;
 }
 
@@ -367,6 +369,10 @@ ul {
   .burger-menu__container {
     display: none;
   }
+}
+
+.burger-menu__container.is-open {
+  display: block;
 }
 
 .hero {
