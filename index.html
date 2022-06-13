@@ -25,9 +25,18 @@
     <!--Шапка-->
     <header class="header">
       <div class="container header-container">
-        <a class="logo header-logo" href="./index.html"
-          >Web<span class="logo-header">Studio</span></a
-        >
+        <div class="burger-menu">
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="logo-header">Studio</span></a
+          >
+          <button class="burger-menu__button" type="button">
+            <svg width="40" height="40" aria-label="Переключатель мобильного миню">
+              <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -597,7 +606,7 @@
             </ul>
           </div>
         </div>
-        
+
         <form class="subscribe-block">
           <h3 class="subscribe-titel">Подпишитесь на рассылку</h3>
           <div class="subscribe-content">

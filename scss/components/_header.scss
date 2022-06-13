@@ -7,6 +7,28 @@
   }
 }
 
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger-menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
