@@ -204,11 +204,13 @@ ul {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 /* навигация */
 .header-nav__list {
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -268,6 +270,7 @@ ul {
 
 /* почта телефон */
 .contact {
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -349,6 +352,20 @@ ul {
 @media screen and (min-width: 1200px) {
   .contact__icon {
     margin-right: 10px;
+  }
+}
+
+.burger-menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu__container {
+    display: none;
   }
 }
 
