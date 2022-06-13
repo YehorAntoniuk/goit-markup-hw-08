@@ -1,8 +1,10 @@
 /* header Шапка */
 
 .header-container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header {
@@ -12,7 +14,11 @@
 /* навигация */
 
 .header-nav__list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   align-items: center;
 
   padding: 0;
@@ -70,7 +76,14 @@
 /* почта телефон */
 
 .contact {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   align-items: center;
 
   padding: 0;
@@ -80,10 +93,25 @@
 }
 
 .contact__item {
-  margin-right: 50px;
+  margin-bottom: 10px;
 
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -92,8 +120,11 @@
   display: flex;
   align-items: center;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,6 +139,11 @@
 }
 
 .contact__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+  
   fill: currentColor;
 }

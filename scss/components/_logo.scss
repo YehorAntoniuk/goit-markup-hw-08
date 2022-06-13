@@ -20,7 +20,17 @@
 }
 
 .header-logo {
-  margin-right: 95px;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  margin-right: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 95px;
+  }
 }
 
 .main-logo {
