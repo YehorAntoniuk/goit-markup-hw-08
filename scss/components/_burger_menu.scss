@@ -1,19 +1,17 @@
-.burger-menu__container {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+// .burger-menu__container {
+//   @media screen and (max-width: 767px) {
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
 
-  display: none;
+//   display: none;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
-  background-color: var(--wigte-cl);
+//   background-color: var(--wigte-cl);
 
-  &.is-open {
-    display: block;
-  }
-}
+//   &.is-open {
+//     display: block;
+//   }
+// }
