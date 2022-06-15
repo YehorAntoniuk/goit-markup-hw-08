@@ -130,20 +130,7 @@ ul {
 }
 
 .header-logo {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-logo {
-    margin-right: 95px;
-  }
+  margin-right: 95px;
 }
 
 .main-logo {
@@ -152,70 +139,53 @@ ul {
 }
 
 /* header Шапка */
-@media screen and (min-width: 768px) {
-  .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
-.burger-menu {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.burger-menu__button {
+.menu__button {
   z-index: 5;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
   padding: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
 }
 
-.burger-menu__button .icon-close {
+.menu__button .icon-close {
   display: none;
 }
 
-.burger-menu__button.is-open .icon-close {
+.menu__button.is-open .icon-close {
   display: block;
 }
 
-.burger-menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-menu {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .burger-menu__button {
+  .menu__button {
     display: none;
   }
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
 }
 
 /* навигация */
 .header-nav__list {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -223,6 +193,11 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -271,37 +246,32 @@ ul {
 /* почта телефон */
 .contact {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: block;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media screen and (max-width: 1199px) {
+  .contact__item {
+    margin-bottom: 10px;
   }
-}
-
-.contact__item {
-  margin-bottom: 10px;
-}
-
-.contact__item:last-child {
-  margin-bottom: 0;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__item:last-child {
     margin-bottom: 0;
   }
@@ -309,8 +279,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .contact__item {
-    margin-right: 50px;
-    margin-bottom: 0;
+    margin-right: 30px;
   }
   .contact__item:last-child {
     margin-right: 0;
@@ -345,13 +314,30 @@ ul {
 }
 
 .contact__icon {
-  margin-right: 8px;
+  margin-right: 10px;
   fill: currentColor;
 }
 
-@media screen and (min-width: 1200px) {
-  .contact__icon {
-    margin-right: 10px;
+/* навигация */
+.menu-container {
+  display: none;
+  background-color: var(--wigte-cl);
+  position: absolute;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+    width: 100%;
   }
 }
 
@@ -1489,5 +1475,27 @@ ul {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.menu-container {
+  display: none;
+  background-color: var(--wigte-cl);
+  position: absolute;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

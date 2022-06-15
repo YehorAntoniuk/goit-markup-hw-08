@@ -20,19 +20,49 @@
 }
 
 .header-logo {
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 95px;
-  }
+  margin-right: 95px;
 }
 
 .main-logo {
   display: inline-block;
   margin-bottom: 20px;
 }
+
+// .logo {
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+
+//   letter-spacing: 0.03em;
+
+//   color: var(--accent-cl);
+
+//   text-decoration: none;
+
+//   &-header {
+//     color: var(--logo-heafer-cl);
+//   }
+
+//   &-footer {
+//     color: var(--wigte-cl);
+//   }
+// }
+
+// .header-logo {
+//   margin-top: 16px;
+//   margin-bottom: 16px;
+
+//   @media screen and (min-width: 768px) {
+//     margin-right: 88px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 95px;
+//   }
+// }
+
+// .main-logo {
+//   display: inline-block;
+//   margin-bottom: 20px;
+// }
