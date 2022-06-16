@@ -11,8 +11,21 @@
   align-items: center;
 }
 
+.header-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
 .menu__button {
-  z-index: 5;
+  z-index: 100;
   display: inline-flex;
 
   margin: 0;
@@ -21,6 +34,11 @@
 
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-cl);
+  }
 
   & .icon-close {
     display: none;
@@ -165,241 +183,3 @@
   fill: currentColor;
 }
 
-// .header-container {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
-// .burger-menu {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-
-// .burger-menu__button {
-//   z-index: 5;
-//   display: inline-flex;
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-//   background-color: transparent;
-
-//   & .icon-close {
-//     display: none;
-//   }
-
-//   &.is-open .icon-close {
-//     display: block;
-//   }
-
-//   &.is-open .icon-menu {
-//     display: none;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
-// .burger-menu__container {
-//   display: none;
-
-//   background-color: var(--wigte-cl);
-
-//   @media screen and (max-width: 767px) {
-//     position: absolute;
-//     padding: 48px 40px;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100%;
-//   }
-
-//   &.is-open {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//     justify-content: space-between;
-
-//     .header-nav__list {
-//       display: block;
-//       @media screen and (min-width: 768px) {
-//         display: none;
-//       }
-//     }
-
-//     .contact {
-//       display: block;
-//       @media screen and (min-width: 768px) {
-//         display: none;
-//       }
-//     }
-
-//     .social-list__menu {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-
-//       @media screen and (min-width: 768px) {
-//         display: none;
-//       }
-//     }
-
-//     @media screen and (max-width: 767px) {
-//       .contact__icon {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
-// .header {
-//   border-bottom: 1px solid #ececec;
-// }
-
-/* навигация */
-
-// .header-nav__list {
-//   display: none;
-
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//   }
-
-//   align-items: center;
-
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .header-nav__link {
-//   font-weight: 500;
-//   font-size: 40px;
-//   line-height: 1.18;
-//   letter-spacing: 0.02em;
-
-//   color: var(--secondary-cl);
-
-//   @media screen and (min-width: 768px) {
-//     position: relative;
-//     display: block;
-
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     font-size: 14px;
-//     line-height: 1.14;
-
-//     transition: color var(--anim);
-//   }
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-cl);
-//   }
-// }
-
-// .header-nav__link--active {
-//   & {
-//     color: var(--accent-cl);
-//   }
-
-//   &::after {
-//     @media screen and (min-width: 768px) {
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-
-//       content: '';
-//       display: block;
-//       width: 100%;
-//       height: 4px;
-//       border-radius: 2px;
-//       background-color: var(--accent-cl);
-//     }
-//   }
-// }
-
-// .header-nav__item {
-//   margin-right: 50px;
-
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
-
-// /* почта телефон */
-
-// .contact {
-//   display: none;
-//   @media screen and (min-width: 768px) {
-//     display: block;
-//     margin-left: auto;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//   }
-
-//   align-items: center;
-
-//   padding: 0;
-//   margin: 0;
-
-// }
-
-// .contact__item {
-//   margin-bottom: 10px;
-
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 50px;
-//     margin-bottom: 0;
-
-//     &:last-child {
-//       margin-right: 0;
-//     }
-//   }
-// }
-
-// .contact__link {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-
-//   @media screen and (min-width: 1200px) {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-
-//   transition: color var(--anim);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-cl);
-//   }
-// }
-
-// .contact__icon {
-//   margin-right: 8px;
-
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 10px;
-//   }
-
-//   fill: currentColor;
-// }

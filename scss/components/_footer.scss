@@ -8,22 +8,21 @@
 .main-footer {
   text-align: center;
 
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
 .container__footer-flex {
   @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }

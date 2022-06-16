@@ -1,16 +1,16 @@
 .address {
   font-style: normal;
 
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+
   &:not(:last-child) {
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
     }
     
   }
-}
-
-.address-list {
-  margin-bottom: 60px;
 }
 
 .address .link {

@@ -6,6 +6,10 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--main-txt-cl);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .section {
@@ -16,9 +20,4 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
-  // @include mq(desktop) {
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-  // }
 }

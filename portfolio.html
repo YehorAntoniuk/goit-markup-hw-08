@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+       <!-- Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+         rel="stylesheet"
+       />
+       <!--Normalize  -->
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+       />
+       <!-- Custom styles -->
+       <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -31,18 +33,19 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="link header-nav__link" href="./index.html">Студия</a>
+              <a class="link header-nav__link " href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="header-nav__item">
-              <a class="link header-nav__link header-nav__link--active" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="link header-nav__link header-nav__link--active" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-nav__item">
               <a class="link header-nav__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+
         <ul class="contact">
           <li class="contact__item">
             <a class="link contact__link" href="mailto:info@devstudio.com">
@@ -61,6 +64,60 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="burger-menu__container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного миню">
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu" id="menu__container" data-menu>
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+              <a class="menu__nav-link menu__nav-link--active link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu__contact-list">
+            <li class="menu__contact-item">
+              <a class="link menu__contact-link--active" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu__contact-item">
+              <a class="link menu__contact-link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="social-list__menu">
+            <li class="social-list__item">
+              <a href="" class="link social-list__links">Instagram</a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="link social-list__links">Twitter</a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="link social-list__links">Facebook</a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="link social-list__links">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Портфолио-->
@@ -88,7 +145,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-1.jpg"
+                    src="./images/portfolio/img-1.jpg"
                     alt="ноутбук с изображением"
                     width="370"
                   />
@@ -109,7 +166,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-2.jpg"
+                    src="./images/portfolio/img-2.jpg"
                     alt="два басткетболиста"
                     width="370"
                   />
@@ -130,7 +187,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-3.jpg"
+                    src="./images/portfolio/img-3.jpg"
                     alt="логотип рыбы"
                     width="370"
                   />
@@ -151,7 +208,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-4.jpg"
+                    src="./images/portfolio/img-4.jpg"
                     alt="наушники"
                     width="370"
                   />
@@ -172,7 +229,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-5.jpg"
+                    src="./images/portfolio/img-5.jpg"
                     alt="две коробки"
                     width="370"
                   />
@@ -193,7 +250,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-6.jpg"
+                    src="./images/portfolio/img-6.jpg"
                     alt="монитор"
                     width="370"
                   />
@@ -214,7 +271,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-7.jpg"
+                    src="./images/portfolio/img-7.jpg"
                     alt="открытый журнал"
                     width="370"
                   />
@@ -235,7 +292,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-8.jpg"
+                    src="./images/portfolio/img-8.jpg"
                     alt="бирка с верёвкой"
                     width="370"
                   />
@@ -256,7 +313,7 @@
                 <div class="card-img">
                   <img
                     class="gallery-img"
-                    src="./images/Portfolio/img-9.jpg"
+                    src="./images/portfolio/img-9.jpg"
                     alt="руки на ноутбуке"
                     width="370"
                   />
@@ -352,5 +409,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
