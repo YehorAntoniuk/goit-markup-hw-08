@@ -1280,6 +1280,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .container__footer-flex {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container__footer-flex {
     display: -webkit-box;
@@ -1350,12 +1356,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--wigte-cl);
-}
-
-@media screen and (max-width: 767.98px) {
-  .join-block {
-    margin-bottom: 60px;
-  }
 }
 
 .subscribe-block {
