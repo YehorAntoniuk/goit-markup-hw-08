@@ -283,13 +283,13 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contact {
     display: block;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .contact__item {
     margin-bottom: 10px;
   }
@@ -1028,7 +1028,7 @@ ul {
   background-color: var(--wigte-cl);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__item {
     margin-bottom: 30px;
   }
@@ -1189,7 +1189,7 @@ ul {
   color: var(--secondary-cl);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .clients__title {
     margin-bottom: 30px;
   }
@@ -1293,7 +1293,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .container__footer-flex {
     margin-bottom: 60px;
   }
@@ -1390,14 +1390,14 @@ ul {
   transition: border var(--anim);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .subscribe-block input {
     margin-bottom: 20px;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .subscribe-block input {
     margin-bottom: 20px;
     width: 450px;
@@ -1440,7 +1440,7 @@ ul {
   transition: background-color var(--anim);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe-btn {
     margin: 0 auto;
   }
